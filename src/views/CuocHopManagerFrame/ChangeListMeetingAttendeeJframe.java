@@ -17,10 +17,7 @@ import java.awt.event.WindowEvent;
 import Bean.MemOfMeeting;
 import controllers.CuocHopManagerController.ChangeListMeetingAttendeeController;
 
-/**
- *
- * @author minib
- */
+
 public class ChangeListMeetingAttendeeJframe extends javax.swing.JFrame {
 
     private List<MemOfMeeting> listMember;

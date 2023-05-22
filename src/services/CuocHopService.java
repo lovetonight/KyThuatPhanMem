@@ -21,11 +21,6 @@ import models.NhanKhauModel;
 import models.ThamGiaCuocHopModel;
 import models.UserMoldel;
 
-/**
- * 
- * @author Nuan
- */
-
 public class CuocHopService {
     // them moi cuoc hop
     public boolean addNew(CuocHopBean cuocHopBean) throws ClassNotFoundException, SQLException {
@@ -39,7 +34,8 @@ public class CuocHopService {
         preparedStatement.setString(3, cuocHopBean.getCuocHopModel().getDiaDiem());
         preparedStatement.setString(4, cuocHopBean.getCuocHopModel().getNoiDung());
         preparedStatement.setInt(5, LoginController.currentUser.getID());
-        // java.sql.Date createDate = new java.sql.Date(quanlynhankhau.QuanLyNhanKhau.calendar.getTime().getTime());
+        // java.sql.Date createDate = new
+        // java.sql.Date(quanlynhankhau.QuanLyNhanKhau.calendar.getTime().getTime());
         // preparedStatement.setDate(3, createDate);
         // System.out.println("something here: " + preparedStatement);
 
@@ -173,10 +169,10 @@ public class CuocHopService {
                     + key
                     + "' IN NATURAL LANGUAGE MODE) ";
         }
-        
+
         try {
             Connection connection = MysqlConnection.getMysqlConnection();
-            PreparedStatement preparedStatement = (PreparedStatement)connection.prepareStatement(query);
+            PreparedStatement preparedStatement = (PreparedStatement) connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 CuocHopBean temp = new CuocHopBean();
@@ -307,30 +303,42 @@ public class CuocHopService {
 
     // edit cuoc hop duoc chon
     public boolean editCuocHop(int idCuocHop, String maCuocHop, String diaDiem, String noiDungChinh, Date ngayHop) {
-        
-        String query = "UPDATE cuoc_hop SET maCuocHop = '" + maCuocHop + "',"
-                    + "diaDiem = " + diaDiem + ","
-                    + "noiDung = " + noiDungChinh + ","
-                    + "ngayHop = " + ngayHop
-                    + "WHERE cuoc_hop.ID = " + idCuocHop;
+        // String query = " UPDATE cuoc_hop SET maCuocHop = '" + maCuocHop + "',"
+        // + " diaDiem = ' " + diaDiem + "',"
+        // + " noiDung = ' " + noiDungChinh + "',"
+        // + " ngayHop = TO_DATE" + ngayHop
+        // + " WHERE cuoc_hop.ID = " + idCuocHop;
+
+        // String query = "DELETE FROM cuoc_hop WHERE ID = " + idCuocHop;
         // String query_1 = "UPDATE tham_gia_cuoc_hop"
+        // try {
+        // Connection connection = MysqlConnection.getMysqlConnection();
+        // PreparedStatement preparedStatement = connection.prepareStatement(query);
+        // preparedStatement.executeUpdate();
+        // preparedStatement.close();
+        // connection.close();
         try {
             Connection connection = MysqlConnection.getMysqlConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            String query = "UPDATE cuoc_hop SET maCuocHop = ?, diaDiem = ?, noiDung = ?, ngayHop = ? WHERE cuoc_hop.ID = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            preparedStatement.setString(1, maCuocHop);
+            preparedStatement.setString(2, diaDiem);
+            preparedStatement.setString(3, noiDungChinh);
+            preparedStatement.setDate(4, ngayHop);
+            preparedStatement.setInt(5, idCuocHop);
             preparedStatement.executeUpdate();
-            preparedStatement.close();
-            connection.close();
+
             return true;
         } catch (Exception e) {
             System.out.println("services.CuocHopService.editCuocHop()");
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra! vui lòng kiểm tra lại.", "Warning!!", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra! vui lòng kiểm tra lại.", "Warning!!",
+                    JOptionPane.WARNING_MESSAGE);
             return false;
         }
     }
 
-
-    // delete cuoc hop duoc chon 
+    // delete cuoc hop duoc chon
     public boolean deleteCuocHop(int idCuocHop) {
         String query = "DELETE FROM cuoc_hop WHERE ID = " + idCuocHop;
         try {
@@ -343,24 +351,25 @@ public class CuocHopService {
         } catch (Exception e) {
             System.out.println("services.CuocHopService.deleteCuocHop()");
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra! vui lòng kiểm tra lại.", "Warning!!", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra! vui lòng kiểm tra lại.", "Warning!!",
+                    JOptionPane.WARNING_MESSAGE);
             return false;
         }
-        
-    }
 
+    }
 
     public int checkMaCuocHop(String maCuocHop) {
         try {
             Connection connection = MysqlConnection.getMysqlConnection();
-            String query = "SELECT * FROM cuoc_hop WHERE maCuocHop = " + maCuocHop; 
+            String query = "SELECT * FROM cuoc_hop WHERE maCuocHop = " + maCuocHop;
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
             if (rs.next()) {
                 return rs.getInt("ID");
             }
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra! Vui lòng kiểm tra lại.", "Warning!!", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra! Vui lòng kiểm tra lại.", "Warning!!",
+                    JOptionPane.WARNING_MESSAGE);
         }
         return -1;
     }

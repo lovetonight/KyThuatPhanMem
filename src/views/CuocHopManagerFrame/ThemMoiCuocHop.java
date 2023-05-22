@@ -20,10 +20,6 @@ import controllers.CuocHopManagerController.ThemMoiCuocHopController;
 import controllers.LoginController;
 import models.ThamGiaCuocHopModel;
 
-/**
- *
- * @author minib
- */
 public class ThemMoiCuocHop extends javax.swing.JFrame {
 
     private JFrame parentJFrame;
