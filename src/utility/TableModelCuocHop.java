@@ -7,10 +7,6 @@ import Bean.CuocHopBean;
 import Bean.MemOfMeeting;
 import Bean.NhanKhauBean;
 
-/**
- * 
- * @author Nuan 
- */
 
 public class TableModelCuocHop {
     public DefaultTableModel setTableNhanKhau(List<NhanKhauBean> listItem, String[] listColumn) {

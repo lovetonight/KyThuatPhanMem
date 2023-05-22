@@ -4,10 +4,7 @@
  */
 package views.CuocHopManagerFrame;
 
-/**
- *
- * @author minib
- */
+
 public class ChooseMeetingAttendee extends javax.swing.JFrame {
 
     /**

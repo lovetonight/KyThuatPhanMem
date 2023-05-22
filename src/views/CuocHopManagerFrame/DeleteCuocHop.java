@@ -11,10 +11,7 @@ import controllers.CuocHopManagerController.XoaCuocHopController;
 import utility.ConfirmByPassword;
 import models.UserMoldel;
 
-/**
- *
- * @author Nuan
- */
+
 public class DeleteCuocHop extends javax.swing.JFrame {
 
     /**
