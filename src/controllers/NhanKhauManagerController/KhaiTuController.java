@@ -1,17 +1,15 @@
 package controllers.NhanKhauManagerController;
 
+import models.KhaiTuModel;
+import services.MysqlConnection;
+
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import javax.swing.JOptionPane;
-import models.KhaiTuModel;
-import services.MysqlConnection;
 
-/**
- *
- * @author Hai
- */
+
 public class KhaiTuController {
     public int checkCMT(String cmt) {
         try {

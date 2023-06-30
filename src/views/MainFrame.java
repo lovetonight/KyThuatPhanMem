@@ -7,17 +7,14 @@ package views;
 
 import Bean.DanhMucBean;
 import controllers.MainController;
+
+import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 
-/**
- *
- * @author Hai
- */
+
 public class MainFrame extends javax.swing.JFrame {
 
     /**

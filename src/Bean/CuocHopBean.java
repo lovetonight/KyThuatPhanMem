@@ -1,18 +1,13 @@
 package Bean;
 
-import java.util.ArrayList;
-import java.util.List;
 import models.CuocHopModel;
 import models.NhanKhauModel;
-import models.UserMoldel;
 import models.ThamGiaCuocHopModel;
-import models.ThanhVienCuaHoModel;
+import models.UserMoldel;
 
-/**
- * 
- * @author Nuan
- * Ket noi tu nhien Cuoc hop va nhan khau
- */
+import java.util.ArrayList;
+import java.util.List;
+
 
 
 public class CuocHopBean {

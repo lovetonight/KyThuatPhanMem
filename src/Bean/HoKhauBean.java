@@ -1,17 +1,13 @@
 package Bean;
 
-import java.util.ArrayList;
-import java.util.List;
 import models.HoKhauModel;
 import models.NhanKhauModel;
 import models.ThanhVienCuaHoModel;
+
+import java.util.ArrayList;
+import java.util.List;
 // import services.HoKhauService;
 
-/**
- *
- * 
- * ket noi tu nhien gia ho_khau va nhan_khau
- */
 
 public class HoKhauBean {
     private HoKhauModel hoKhauModel;

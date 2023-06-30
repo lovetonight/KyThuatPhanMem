@@ -2,15 +2,12 @@ package views.NhanKhauManagerFrame;
 
 import Bean.NhanKhauBean;
 import controllers.NhanKhauManagerController.TieuSuController;
+
+import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 
-/**
- *
- * @author Hai
- */
+
 public class TieuSuJFrame extends javax.swing.JFrame {
 
     /**

@@ -23,10 +23,6 @@ import services.StringService;
 import utility.TableModelCuocHop;
 import views.infoViews.InfoJframe;
 
-/**
- * 
- * @author Nuan
- */
 
 public class CuocHopPanelController {
     private JTextField searchJtf;

@@ -3,23 +3,17 @@ package controllers.HoKhauManagerController;
 import Bean.HoKhauBean;
 import Bean.MemOfFamily;
 import Bean.NhanKhauBean;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.sql.SQLException;
-import java.util.EventObject;
-import java.util.List;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
 import services.HoKhauService;
 import utility.TableModelHoKhau;
 
-/**
- *
- * @author Hai
- */
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import java.awt.*;
+import java.sql.SQLException;
+import java.util.EventObject;
+import java.util.List;
+
+
 public class ThemMoiController {
     private NhanKhauBean chuHo;
     private List<MemOfFamily> listThanhVien;

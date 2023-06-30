@@ -1,16 +1,13 @@
 package Bean;
 
-import java.util.ArrayList;
-import java.util.List;
 import models.ChungMinhThuModel;
 import models.GiaDinhModel;
 import models.NhanKhauModel;
 import models.TieuSuModel;
 
-/**
- *
- * @author Hai
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class NhanKhauBean {
     private NhanKhauModel nhanKhauModel;
     private ChungMinhThuModel chungMinhThuModel;

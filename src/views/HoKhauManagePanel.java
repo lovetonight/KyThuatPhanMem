@@ -6,15 +6,13 @@
 package views;
 
 import controllers.HoKhauPanelController;
-import javax.swing.JFrame;
 import views.HoKhauManagerFrame.ChuyenDiNoiKhac;
 import views.HoKhauManagerFrame.TachHoKhau;
 import views.HoKhauManagerFrame.ThemMoiHoKhau;
 
-/**
- *
- * @author Ai làm thì diền tên vào
- */
+import javax.swing.*;
+
+
 public class HoKhauManagePanel extends javax.swing.JPanel {
     
     private JFrame parentFrame;

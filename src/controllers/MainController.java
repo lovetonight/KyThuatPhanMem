@@ -5,26 +5,15 @@
 package controllers;
 
 import Bean.DanhMucBean;
-import java.awt.BorderLayout;
-import java.awt.Color;
+import views.*;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.List;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
 
-import views.CuocHopManagePanel;
-import views.HoKhauManagePanel;
-import views.HomePagePanel;
-import views.NhanKhauManagePanel;
-import views.ThongKePanel;
-import views.TimKiemPanel;
 
-/**
- *
- * @author Hai
- */
 public class MainController {
     private JFrame jfrMain;
     private JPanel root;
