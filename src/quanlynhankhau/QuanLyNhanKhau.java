@@ -1,14 +1,11 @@
 package quanlynhankhau;
 
-import java.util.Calendar;
-import javax.swing.UIManager;
 import views.LoginUI;
-import views.MainFrame;
 
-/**
- *
- * @author Hai
- */
+import javax.swing.*;
+import java.util.Calendar;
+
+
 public class QuanLyNhanKhau {
 
     public static Calendar calendar = Calendar.getInstance();
