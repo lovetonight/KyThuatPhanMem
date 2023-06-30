@@ -1,17 +1,13 @@
 package views;
 
 import controllers.LoginController;
+
+import javax.swing.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.sql.SQLException;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
 
-/**
- *
- * @author Hai
- */
+
 public class LoginUI extends javax.swing.JFrame {
     
     private LoginController cont = new  LoginController();
@@ -52,8 +48,10 @@ public class LoginUI extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(rootPane, "Sai thong tin dang nhap", "Warning", JOptionPane.WARNING_MESSAGE);
             }
-        } catch (SQLException | ClassNotFoundException e) {
-            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra!! Vui lòng kiểm tra lại!", "Warning!!", JOptionPane.ERROR_MESSAGE);
+        } catch (ClassNotFoundException e) {
+            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra ClassNotFoundException !! Vui lòng kiểm tra lại!", "Warning!!", JOptionPane.ERROR_MESSAGE);
+        } catch (SQLException e){
+            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra về SQL!! Vui lòng kiểm tra lại!", "Warning!!", JOptionPane.ERROR_MESSAGE);
         }
     }
             
