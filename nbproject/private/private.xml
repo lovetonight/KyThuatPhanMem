@@ -3,11 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/KyThuatPhanMem/src/services/MysqlConnection.java</file>
-            <file>file:/E:/KyThuatPhanMem/src/views/HoKhauManagePanel.java</file>
-            <file>file:/E:/KyThuatPhanMem/src/views/HomePagePanel.java</file>
-            <file>file:/E:/KyThuatPhanMem/src/quanlynhankhau/QuanLyNhanKhau.java</file>
-            <file>file:/E:/KyThuatPhanMem/src/views/LoginUI.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/HoKhauManagerFrame/ChangeListPeopleJframe.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/LoginUI.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/CuocHopManagerFrame/ChangeListMeetingAttendeeJframe.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/CuocHopManagerFrame/DeleteCuocHop.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/CuocHopManagerFrame/ThemMoiCuocHop.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/HomePagePanel.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/CuocHopManagerFrame/EditCuocHop.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/MainFrame.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/CuocHopManagePanel.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/TimKiemPanel.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/HoKhauManagerFrame/ChoosePeople.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/HoKhauManagePanel.java</file>
+            <file>file:/C:/Users/ngochm/Downloads/KyThuatPhanMem/src/views/CuocHopManagerFrame/ChooseMeetingAttendee.java</file>
         </group>
     </open-files>
 </project-private>
