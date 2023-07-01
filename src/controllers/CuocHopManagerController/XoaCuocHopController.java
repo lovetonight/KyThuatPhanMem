@@ -26,10 +26,6 @@ import services.CuocHopService;
 import services.MysqlConnection;
 import utility.TableModelCuocHop;
 
-/**
- * 
- * @author Nuan
- */
 
 public class XoaCuocHopController {
     private CuocHopBean cuocHopBean;

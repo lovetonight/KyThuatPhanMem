@@ -8,11 +8,6 @@ import models.UserMoldel;
 import models.ThamGiaCuocHopModel;
 import models.ThanhVienCuaHoModel;
 
-/**
- * 
- * @author Nuan
- * Ket noi tu nhien Cuoc hop va nhan khau
- */
 
 
 public class CuocHopBean {

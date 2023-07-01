@@ -2,10 +2,6 @@ package Bean;
 
 import models.ThamGiaCuocHopModel;
 
-/**
- * 
- * @author Nuan
- */
 
 public class MemOfMeeting {
     private NhanKhauBean nhanKhau;

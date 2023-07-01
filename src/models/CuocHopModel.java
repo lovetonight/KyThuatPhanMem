@@ -2,10 +2,7 @@ package models;
 
 import java.util.Date;
 
-/**
- * 
- * @author Nuan
- */
+
 
 public class CuocHopModel {
     private int ID;

@@ -11,10 +11,7 @@ import views.CuocHopManagerFrame.ThemMoiCuocHop;
 
 import javax.swing.*;
 
-/**
- *
- * @author minib
- */
+
 public class CuocHopManagePanel extends javax.swing.JPanel {
 
     private JFrame parentFrame;

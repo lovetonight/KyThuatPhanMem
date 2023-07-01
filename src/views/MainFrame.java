@@ -14,10 +14,7 @@ import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Hai
- */
+
 public class MainFrame extends javax.swing.JFrame {
 
     /**
@@ -73,6 +70,7 @@ public class MainFrame extends javax.swing.JFrame {
         jpnBean = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1080, 720));
 
         jpnContainer.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -116,8 +114,8 @@ public class MainFrame extends javax.swing.JFrame {
             NhanKhauBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(NhanKhauBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jlbNhanKhau)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jlbNhanKhau, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         NhanKhauBtnLayout.setVerticalGroup(
             NhanKhauBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -180,7 +178,7 @@ public class MainFrame extends javax.swing.JFrame {
         jlbQuanLyHop.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jlbQuanLyHop.setForeground(new java.awt.Color(255, 255, 255));
         jlbQuanLyHop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-group-task-32 (1).png"))); // NOI18N
-        jlbQuanLyHop.setText("Quản Lý Họp");
+        jlbQuanLyHop.setText("Quản Lý cuộc họp");
 
         javax.swing.GroupLayout QuanLyHopBtnLayout = new javax.swing.GroupLayout(QuanLyHopBtn);
         QuanLyHopBtn.setLayout(QuanLyHopBtnLayout);
@@ -235,7 +233,7 @@ public class MainFrame extends javax.swing.JFrame {
         jpnBean.setLayout(jpnBeanLayout);
         jpnBeanLayout.setHorizontalGroup(
             jpnBeanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 791, Short.MAX_VALUE)
+            .addGap(0, 755, Short.MAX_VALUE)
         );
         jpnBeanLayout.setVerticalGroup(
             jpnBeanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
