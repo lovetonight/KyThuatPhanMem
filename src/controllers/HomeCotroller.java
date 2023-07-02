@@ -1,18 +1,22 @@
 package controllers;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import services.MysqlConnection;
 
 
-public class HomeCotroller {
+public class HomeCotroller extends JFrame implements ActionListener {
     private JLabel tongNhanKhauLb;
     private JLabel tongHoKhauLb;
     private JLabel nhanKhauTamTruLb;
     private JLabel nhanKhauTamVangLb;
     private JLabel tongCuocHopLb;
+   
 
     public HomeCotroller(JLabel tongNhanKhauLb, JLabel tongHoKhau, JLabel nhanKhauTamTruLb, JLabel nhanKhauTamVangLb, JLabel tongCuocHopLb) {
         this.tongNhanKhauLb = tongNhanKhauLb;
@@ -108,5 +112,9 @@ public class HomeCotroller {
 
     public void setCuocHopKhau(JLabel tongCuocHopLb) {
         this.tongCuocHopLb = tongCuocHopLb;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
     }
 }

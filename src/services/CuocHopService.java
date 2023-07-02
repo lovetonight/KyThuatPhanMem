@@ -351,7 +351,7 @@ public class CuocHopService {
         } catch (Exception e) {
             System.out.println("services.CuocHopService.deleteCuocHop()");
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra! vui lòng kiểm tra lại.", "Warning!!",
+            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra không thể xóa cuộc họp! vui lòng kiểm tra lại.", "Warning!!",
                     JOptionPane.WARNING_MESSAGE);
             return false;
         }

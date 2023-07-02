@@ -4,6 +4,7 @@ import models.UserMoldel;
 import services.CuocHopService;
 import utility.TableModelCuocHop;
 
+import java.awt.event.ActionEvent;
 import java.util.EventObject;
 import java.util.List;
 import java.awt.Dimension;
@@ -58,5 +59,9 @@ public class ThemMoiCuocHopController {
     
     public void addNew(CuocHopBean cuocHopBean) throws ClassNotFoundException, SQLException{
         this.cuocHopService.addNew(cuocHopBean);
+    }
+
+    public void setData(ActionEvent evt) {
+
     }
 }

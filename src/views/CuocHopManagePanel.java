@@ -73,7 +73,7 @@ public class CuocHopManagePanel extends javax.swing.JPanel {
         });
 
         StatusJcb.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        StatusJcb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Toàn bộ", "Hôm nay", "Dã họp", "Chưa họp" }));
+        StatusJcb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Toàn bộ", "Hôm nay", "Đã họp", "Chưa họp" }));
 
         statusChoose.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         statusChoose.setText("Trạng thái");
@@ -143,6 +143,7 @@ public class CuocHopManagePanel extends javax.swing.JPanel {
         themMoiCuocHop.setLocationRelativeTo(null);
         themMoiCuocHop.setResizable(false);
         themMoiCuocHop.setVisible(true);
+        this.controller.setData();
     }//GEN-LAST:event_themMoiBtnActionPerformed
 
     private void jtfSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfSearchActionPerformed
