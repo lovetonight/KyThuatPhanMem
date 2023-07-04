@@ -12,10 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import models.TamTruModel;
 
-/**
- *
- * @author Hai
- */
+
 public class DangKyTamTruJFrame extends javax.swing.JFrame {
 
     private JFrame parentFrame;
@@ -305,11 +302,12 @@ public class DangKyTamTruJFrame extends javax.swing.JFrame {
                 soCmtJtf.setEnabled(false);
                 checkBtn.setEnabled(false);
                 availableIcon.setEnabled(true);
-                maGiayTamTruJtf.setEnabled(true);
+                maGiayTamTruJtf.setEnabled(true); 
                 soDienThoaiJtf.setEnabled(true);
                 tuNgayDc.setEnabled(true);
                 denNgayDc.setEnabled(true);
                 lyDoTar.setEnabled(true);
+                JOptionPane.showMessageDialog(this, "OK!!");
             } else {
                 if (JOptionPane.showConfirmDialog(null, "Không tìm thấy người có số CMT: " + soCmtJtf.getText() + ". Thêm mới?", "Confirm", JOptionPane.YES_NO_OPTION) == JOptionPane.OK_OPTION) {
                     AddNewPeopleJFrame addNewPeopleJFrame = new AddNewPeopleJFrame(this);
