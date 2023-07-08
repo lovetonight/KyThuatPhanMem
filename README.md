@@ -1,7 +1,7 @@
 # KyThuatPhanMem
 
 1. Các yêu cầu  
-Yêu cầu: SQL server  
+Yêu cầu: MySQL
 Tải file sql về và import vào cơ sở dữ liệu thiết lập DB (có thể dùng workbench).  
 Thư viện: jcalendar-1.2.2, mysql-connector-java-8.0.22, jdk-19 
 
